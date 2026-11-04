@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – David Christian Kay</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals Homepage for David Christian Kay's course work in HTML, CSS, JavaScript, and responsive web design.">
+    <meta name="author" content="David Christian Kay">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+
 </head>
+
 <body>
-    <h1>Wdd131 - Kaynetic - One</h1>
+
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/dchristiankay" target="_blank" rel="noopener">LinkedIn</a>
+
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank" rel="noopener">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>David Christian Kay</h1>
+
+        <section class="card">
+            <h2>Course Work</h2>
+            <img src="images/coursework.webp" alt="Laptop with code on the screen at sunset" width="533" height="355">
+            <ul>
+                <li>WDD 130 – Web Fundamentals</li>
+                <li>WDD 131 – Dynamic Web Fundamentals</li>
+                <li>CSE 110 – Introduction to Programming</li>
+                <li>CSE 111 – Programming with Functions</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Utah, USA</h2>
+            <img src="images/malans_peak.webp" alt="View of Ben Lomond Peak from Malan's Peak" width="533" height="300">
+            <p>I live in Utah, where the mountains are our backyard, the weather has commitment issues, and outdoor
+                recreation is practically a personality trait.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌄 David Christian Kay 🌄 Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
+
 </body>
+
 </html>
