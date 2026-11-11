@@ -110,6 +110,44 @@ h1 {
     line-height: 1.6;
 }
 
+/* Web Dev Resources: full-width card below the two columns */
+.resources {
+    grid-column: 1 / -1;
+    background-color: #fff;
+    border: 1px solid #c8d3dc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.resources h2 {
+    margin: 0;
+    padding: 0.75rem 1rem;
+    font-family: var(--heading-font);
+    font-size: 1.25rem;
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.resources ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+    margin: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.resources a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.resources a:hover,
+.resources a:focus {
+    color: var(--secondary);
+}
+
 /* Footer */
 footer {
     background-color: var(--primary);
