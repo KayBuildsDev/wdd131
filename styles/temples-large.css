@@ -1,0 +1,26 @@
+/* ===== Larger screens: only the changes from the mobile styles ===== */
+@media (min-width: 700px) {
+
+    /* Hide the hamburger button */
+    #menu {
+        display: none;
+    }
+
+    /* Title on the left, menu on the right, in one row */
+    header {
+        grid-template-columns: auto 1fr;
+    }
+
+    /* Always show the nav, as a row */
+    .navigation {
+        grid-column: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    /* Three columns of figures */
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
