@@ -1,0 +1,42 @@
+
+
+/* Two-column layout for main */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Left-aligned, spans both columns */
+h2 {
+  color: navy;
+  text-align: left;
+  grid-column: 1 / -1;
+}
+
+article p {
+  text-align: justify;
+}
+
+/* Fixed padding + contrast (white on #702963 = 9.6:1, passes AA and AAA) */
+.callout {
+  grid-column: 1 / -1;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  background-color: #702963;
+}
+
+/* Static banner replaces the marquee */
+.banner {
+  padding: 0.75rem 1rem;
+  background-color: #f4f4f4;
+  border-left: 4px solid #702963;
+  text-align: center;
+}
+
+footer {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: smaller;
+  text-align: left;
+}
