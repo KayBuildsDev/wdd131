@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lazy Load Demonstration</title>
+    <meta name="description" content="Demonstration of lazy loading images using the loading attribute.">
+    <meta name="author" content="David Christian Kay">
+    <link rel="stylesheet" href="lazyload.css">
+    <script src="lazyload.js" defer></script>
+
+</head>
+
+<body>
+
+    <main>
+        <h1>Lazy Load Demonstration</h1>
+        <section class="lazyload">
+            <h2>Lazy Loaded Images</h2>
+            <p>The images below are lazy loaded using the loading="lazy" attribute. They will only load when they are about to enter the viewport.</p>
+            <picture>
+                <img src="https://picsum.photos/400/600" alt="artistic image" width="400" height="600" loading="lazy">
+            </picture>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <picture>
+                <img src="https://picsum.photos/400/700" alt="artistic image" width="400" height="600" loading="lazy">
+            </picture>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <picture>
+                <img src="https://picsum.photos/400/750" alt="artistic image" width="400" height="600" loading="lazy">
+            </picture>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <picture>
+                <img src="https://picsum.photos/400/800" alt="artistic image" width="400" height="600" loading="lazy">
+            </picture>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <picture>
+                <img src="https://picsum.photos/400/850" alt="artistic image" width="400" height="600" loading="lazy">
+            </picture>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <picture>
+                <img src="https://picsum.photos/400/900" alt="artistic image" width="400" height="600" loading="lazy">
+            </picture>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Lazy Load Demo | Christian Kay</p>
+        <p>Last Modification: <span id="lastmodified"></span></p>
+
+    </footer>
+    
+</body>
+</html>
